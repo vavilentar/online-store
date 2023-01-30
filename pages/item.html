@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="shortcut icon" href="../icons/favico.ico" type="image/x-icon">
+	<link rel="stylesheet" href="../css/style.css">
+	<title>Модульная кухня Ройс</title>
+</head>
+<body>
+	<header>
+		<div class="header-bar">
+			<ul class="header-bar_list">
+				<li id="cities"><a href="#">Город</a></li>
+				<li><a href="#">Акции</a></li>
+				<li><a href="#">Сборка</a></li>
+				<li><a href="#">Доставка</a></li>
+			</ul>
+			<ul class="header-bar_list">
+				<li><a href="#">Наши работы</a></li>
+				<li><a href="#">Контакты</a></li>
+			</ul>
+		</div>
+		<div class="header-bar">
+			<a href="../index.html"><img src="../icons/logotype.svg" alt="Logotype"></a>
+			<div class="address">
+				<p>ул. Московская, 144 корп. - 1</p>
+				<a href="#">Схема проезда</a>
+			</div>
+			<input placeholder="Поиск" type="text" id="search">
+			<div class="phone-call">
+				<p><img src="../icons/phone.svg" alt=""> 8 (961) 525 91 91</p>
+				<button>Заказать звонок</button>
+			</div>
+			<div class="login">
+				<a class="login-user_btn" href="#"><img src="../icons/user-pic.svg" alt=""> Войти</a>
+				<a href="#"><img src="../icons/fav-pic.svg" alt=""> Избранное</a>
+				<a href="#"><img src="../icons/cart-pic.svg" alt=""> Корзина</a>
+			</div>
+			<div class="login-modal">
+				<h2>Вход</h2>
+				<div>
+					<p>Телефон или email</p>
+					<input placeholder="+7 (000) 000 00 00" type="text">
+				</div>
+				<div>
+					<p>Пароль</p>
+					<input placeholder="**********" type="password">
+				</div>
+				<a href="#">Забыли пароль?</a>
+				<button>Войти</button>
+				<a href="#">Зарегистироваться</a>
+				<img class="login-modal_close" src="../icons/close-img.svg" alt="">
+			</div>
+		</div>
+		<div id="categories" class="header-bar">
+			<li class="category-item"><a catid="1" href="#">Кухни</a>
+				<ul catDetailedID="1" class="category-detailed">
+					<li><a href="#">Модульные кухни</a></li>
+					<li><a href="#">Готовые комплекты</a></li>
+					<li><a href="#">Маленькие кухни</a></li>
+					<li><a href="#">Угловые кухни</a></li>
+					<li><a href="#">Кухонные уголки</a></li>
+					<li><a href="#">Столы кухонные</a></li>
+					<li><a href="#">Стулья для кухни</a></li>
+					<li><a href="#">Комплектующие</a></li>
+				</ul>
+			</li>
+
+			<li class="category-item"><a catid="2" href="#">Гостинные</a>
+				<ul catDetailedID="2" class="category-detailed">
+					<li><a href="#">Гостинные</a></li>
+					<li><a href="#">Модульные</a></li>
+					<li><a href="#">Журнальные столы</a></li>
+					<li><a href="#">Полки</a></li>
+					<li><a href="#">Тумбы под ТВ</a></li>
+					<li><a href="#">Шкафы</a></li>
+					<li><a href="#">Стеллажи</a></li>
+				</ul>
+			</li>
+			<li class="category-item"><a catid="3" href="#">Спальни</a>
+				<ul catDetailedID="3" class="category-detailed">
+					<li><a href="#">Кровати</a></li>
+					<li><a href="#">Матрацы</a></li>
+					<li><a href="#">Шкафы</a></li>
+					<li><a href="#">Комоды</a></li>
+					<li><a href="#">Столы туалетные</a></li>
+					<li><a href="#">Тумбы прикроватные</a></li>
+					<li><a href="#">Зеркала</a></li>
+				</ul>
+			</li>
+			<li class="category-item"><a catid="4" href="#">Прихожие</a>
+				<ul catDetailedID="4" class="category-detailed">
+					<li><a href="#">Модульные</a></li>
+					<li><a href="#">Обувницы</a></li>
+				</ul>
+			</li>
+			<li class="category-item"><a catid="5" href="#">Шкаф-купе</a></li>
+			<li class="category-item"><a catid="6" href="#">Детские</a>
+				<ul catDetailedID="6" class="category-detailed">
+					<li><a href="#">Кровати</a></li>
+					<li><a href="#">Полки</a></li>
+					<li><a href="#">Столы</a></li>
+					<li><a href="#">Тумбы</a></li>
+					<li><a href="#">Шкафы</a></li>
+					<li><a href="#">Комоды</a></li>
+				</ul>
+			</li>
+			<li class="category-item"><a catid="7" href="#">Диваны</a>
+				<ul catDetailedID="7" class="category-detailed">
+					<li><a href="#">Прямые</a></li>
+					<li><a href="#">Угловые</a></li>
+					<li><a href="#">На металлокаркасе</a></li>
+					<li><a href="#">Кресла</a></li>
+				</ul>
+			</li>
+			<li class="category-item"><a catid="8" href="#">Где посмотреть</a></li>
+		</div>
+	</header>
+	<main>
+
+		<div id="item">
+			<div class="photo-block">
+				<img src="../img/item/item-img.png" alt="">
+				<div class="thumbs">
+					<img src="../img/item/item-mini-img-1.png" alt="">
+					<img src="../img/item/item-mini-img-2.png" alt="">
+					<img src="../img/item/item-mini-img-3.png" alt="">
+					<img src="../img/item/item-mini-img-4.png" alt="">
+					<img src="../img/item/item-mini-img-1.png" alt="">
+				</div>
+			</div>
+			<div class="info-block">
+				<div>
+					<p>Модульная кухня Ройс</p>
+				</div>
+				<div>
+					<p><span>18 700 руб.</span></p>
+					<p>13 100 руб. руб.</p>
+				</div>
+				<div>
+					<p>В наличии</p>
+					<p>Рассрочка 0-0-6</p>
+				</div>
+				<div class="item-btns">
+					<button>Купить</button>
+					<button>Сделать проект и просчет</button>
+					<button>Где посмотреть</button>
+				</div>
+				<div>
+					<p>Цвета фасадов: </p>
+					<div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+				</div>
+				<div class="details">
+					<h3 class="subtitle">ХАРАКТЕРИСТИКИ</h3>
+					<p>Высота нижних шкафов: 858 мм - до верха столешницы</p>
+					<p>Высота верхних шкафов: 700 мм</p>
+					<p>Глубина нижних шкафов: 500 мм корпус (по столешнице 600 мм)</p>
+					<p>Глубина верхних шкафов: 300 мм</p>
+					<p>Материал фасада: МДФ пленка ПВХ</p>
+					<p>Материал корпуса: Серый ЛДСП</p>
+					<p>Направляющие: Роликовые</p>
+					<p>Столешница: Выбирается отдельно (в стоимость не входит)</p>
+					<p>Стекло: 4 мм матовое</p>
+					<p>Фурнитура: Петли и направляющие в комплекте</p>
+					<p>Ручки: В комплект не входят</p>
+				</div>
+			</div>
+		</div>
+
+		<div id="item-menus">
+			<ul class="menu-list">
+				<li><a menuTag="0" class="menu-list_item active-menu" href="">Доступные модули</a></li>
+				<li><a menuTag="1" class="menu-list_item" href="">Варианты столешниц</a></li>
+				<li><a menuTag="2" class="menu-list_item" href="">Отзывы</a></li>
+				<li><a menuTag="3" class="menu-list_item" href="">Описание</a></li>
+				<li><a menuTag="4" class="menu-list_item" href="">Доставка и оплата</a></li>
+			</ul>
+			<div class="block block-active" id="modules"></div>
+			<div class="block" id="tables"></div>
+			<div class="block" id="feedback">
+				<p>К сожалению, пока никто не оставил отзыв для данного товара, будьте первым!</p>
+				<button>ОСТАВИТЬ ОТЗЫВ</button>
+			</div>
+			<div class="block" id="description">
+				<p>Кухня Ройс – модель, которая позволит владельцу обустроить пространство с пользой и со вкусом. Модули легко менять местами, добавлять и убирать лишние. Широкий выбор цветов фасада – дополнительный плюс для покупателя.
+<br><br>
+					Фасад кухни выполнен из практичной МДФ, обтянутой ламинирующей пленкой для защиты от влаги. Корпус – из ламинированной ДСП. Материалы экологически чистые, не впитывают влагу, служат долго и просты в уходе. Все выдвижные элементы оснащены качественными роликовыми направляющими – движутся плавно и тихо.
+					<br><br>
+					Модель отличает большая глубина шкафов: верхних – 308 мм, нижних – 500 мм. Универсальная кухня Ройс впишется в интерьер любого стиля: от классики до хай-тек.   
+					</p>
+			</div>
+			<div class="block" id="delivery"></div>
+		</div>
+
+		<div id="promo">
+			<h2 class="title">Возможно вас заинтересует</h2>
+			<div id="promo-slider">
+				<div id="next"><a href="#">&gt</a></div>
+				<div id="prev"><a href="#">&lt</a></div>
+			</div>
+		</div>
+		<div id="popular-cats">
+			<h2 class="title">Популярные категории</h2>
+			<div id="popular-cats-block">
+			</div>
+		</div>
+		<div id="contacts">
+			<div class="info">
+				<h2 class="title">Наши Контакты</h2>
+				<p>Краснодар, Московская 144 корпус -1</p>
+				<p>+7 961-525-91-91</p>
+				<button>ЗАДАТЬ ВОПРОС</button>
+			</div>
+			<div class="map">
+				<iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A48f9cd520a1e15c4e51739af3346924ac8f7b175ef55e824554e200c0276814a&amp;source=constructor" width="808" height="468" frameborder="0"></iframe>
+			</div>
+		</div>
+	</main>
+	<footer class="footer-wrapper">
+		<div id="footer">
+			<div class="footer-info">
+				<img src="../icons/logotype.svg" alt="">
+				<p><span>8-961-525-91-91</span></p>
+				<div class="work-time">
+					<p>Время работы: <span>с 10:00 до 19:00</span></p>
+					<p>Адрес: <span>Краснодар, <br>
+						ул. Московская 144 корп. - 1</span>
+					</p>
+					<p>Почта: <span>mebelarko@mail.ru</span></p>
+				</div>
+				<p><span><a href="#">Мы в Инстаграме</a></span></p>
+			</div>
+			<ul>
+				<li><a href="#">Кухни</a></li>
+				<li><a href="#">Модульные кухни</a></li>
+				<li><a href="#">Готовые комплекты</a></li>
+				<li><a href="#">Маленькие кухни</a></li>
+				<li><a href="#">Угловые кухни</a></li>
+				<li><a href="#">Кухонные уголки</a></li>
+				<li><a href="#">Столы кухонные</a></li>
+				<li><a href="#">Стулья для кухни</a></li>
+				<li><a href="#">Комплектующие</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Гостинные</a></li>
+				<li><a href="#">Модульные</a></li>
+				<li><a href="#">Журнальные столы</a></li>
+				<li><a href="#">Полки</a></li>
+				<li><a href="#">Тумбы под ТВ</a></li>
+				<li><a href="#">Шкафы</a></li>
+				<li><a href="#">Стеллажи</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Спальни</a></li>
+				<li><a href="#">Кровати</a></li>
+				<li><a href="#">Матрацы</a></li>
+				<li><a href="#">Шкафы</a></li>
+				<li><a href="#">Комоды</a></li>
+				<li><a href="#">Столы туалетные</a></li>
+				<li><a href="#">Тумбы прикроватные</a></li>
+				<li><a href="#">Зеркала</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Диваны</a></li>
+				<li><a href="#">Прямые</a></li>
+				<li><a href="#">Угловые</a></li>
+				<li><a href="#">На металлокаркасе</a></li>
+				<li><a href="#">Кресла</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Детские</a></li>
+				<li><a href="#">Кровати</a></li>
+				<li><a href="#">Полки</a></li>
+				<li><a href="#">Столы</a></li>
+				<li><a href="#">Тумбы</a></li>
+				<li><a href="#">Шкафы</a></li>
+				<li><a href="#">Комоды</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Прихожие</a></li>
+				<li><a href="#">Модульные</a></li>
+				<li><a href="#">Обувницы</a></li>
+			</ul>
+			<ul>
+				<li><a href="#">Шкафы-купе</a></li>
+			</ul>
+		</div>
+	</footer>
+	<script src="./item.js"></script>
+</body>
+</html>
