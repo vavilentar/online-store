@@ -1036,14 +1036,37 @@ span {
 
 	.info-block div:nth-child(2) p:nth-child(2) {
 		font-size: 25px;
-	 }
+	}
 
-	 .item-btns button {
+	.item-btns button {
 		width: 100%;
 		font-size: 1.3em;
-	 }
+	}
 
-	.thumbs img{
+	.menu-list {
+		display: grid;
+		grid-template: 1fr 1fr / 1fr 1fr;
+		text-align: center;
+		margin-bottom: 25px;
+	}
+
+	.menu-list li {
+		font-size: 1em;
+	}
+
+	.login-modal {
+		width: 95%;
+	}
+
+	.login-modal input{
+		width: 300px;
+	}
+	
+	.block {
+		padding: 0 15px;
+	}
+
+	.thumbs img {
 		margin: 0;
 	}
 
