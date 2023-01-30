@@ -399,7 +399,7 @@ span {
 	max-width: 1520px;
 	display: grid;
 	grid-template-columns: 1fr 1fr;
-	height: 448px;
+	height: fit-content;
 }
 
 .info {
@@ -897,5 +897,47 @@ span {
 	}
 	to {
 		opacity: 1;
+	}
+}
+
+@media (max-width: 1025px) {
+	#search {
+		width: 150px;
+	}
+	.phone-call p {
+		font-size: 1.2em;
+	}
+	.hero {
+		width: 100%;
+	}
+	.features-block {
+		display: flex;
+		flex-wrap: wrap;
+		row-gap: 15px;
+	}
+	#popular-cats-block {
+		gap: 15px;
+	}
+	#promo-slider {
+		flex-wrap: wrap;
+	}
+	#next {
+		right: 25px;
+	}
+	#prev {
+		left: 15px;
+	}
+
+	#contacts {
+		grid-template-columns: 1fr;
+	}
+
+	.info {
+		width: 808px;
+		height: 468px;
+	}
+
+	#inst-gallery img {
+		width: 90%;
 	}
 }
