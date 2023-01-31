@@ -1,0 +1,22 @@
+{
+  "name": "arko-store",
+  "version": "1.0.0",
+  "description": "Online store page",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/vavilentar/online-store.git"
+  },
+  "keywords": [
+    "store"
+  ],
+  "author": "Roman P.",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vavilentar/online-store/issues"
+  },
+  "homepage": "https://github.com/vavilentar/online-store#readme"
+}

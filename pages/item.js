@@ -1,14 +1,11 @@
 const popularCatsBar = document.getElementById('popular-cats-block');
 const sliderBar = document.getElementById('promo-slider');
-const showMoreBtn = document.getElementById('show-more');
 const modulesBar = document.getElementById('modules')
 const tablesBar = document.getElementById('tables')
 const menuItems = document.querySelectorAll('.menu-list_item')
 const blocks = document.querySelectorAll('.block')
 
-const cartModal = document.querySelector('.add-cart_modal');
 const loginModal = document.querySelector('.login-modal');
-const closeModalBtn = document.querySelector('.close-modal');
 const closeLoginBtn = document.querySelector('.login-modal_close');
 const openLoginBtn = document.querySelector('.login-user_btn');
 

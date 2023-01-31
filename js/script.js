@@ -7,6 +7,8 @@ const showMoreBtn = document.getElementById('show-more');
 const cartModal = document.querySelector('.add-cart_modal');
 const loginModal = document.querySelector('.login-modal');
 const closeModalBtn = document.querySelector('.close-modal');
+const continueBtn = document.querySelector('.close-modal_btn')
+
 const closeLoginBtn = document.querySelector('.login-modal_close');
 const openLoginBtn = document.querySelector('.login-user_btn');
 
@@ -19,7 +21,6 @@ categoriesLinks.forEach(link => {
 	})
 })
 
-
 openLoginBtn.addEventListener('click', (e) => {
 	e.preventDefault();
 	loginModal.classList.toggle('login-opened');
@@ -30,50 +31,6 @@ closeLoginBtn.addEventListener('click', (e) => {
 })
 
 const catalogueList = ['Кухни', 'Гостинные', 'Спальни', 'Прихожие', 'Шкаф-купе', 'Детские', 'Диваны', 'Столы и стулья'];
-const popularItems = [
-
-	{
-		name: 'Мори кровать КРМ 900.1',
-		oldPrice: 7159,
-		newPrice: 5017,
-	},
-	{
-		name: 'Гостиная модульная Lucido',
-		oldPrice: 7159,
-		newPrice: 5017,
-	},
-	{
-		name: 'Ронда КРР1600.1',
-		oldPrice: 7159,
-		newPrice: 5017,
-	},
-	{
-		name: 'Гранд шкаф верхний горизонтальный глубокий стекло 500',
-		oldPrice: 7159,
-		newPrice: 5017,
-	},
-	{
-		name: 'Кухня Лондон модульная',
-		oldPrice: 7159,
-		newPrice: 5017,
-	},
-	{
-		name: 'Ронда КРР1600.1',
-		oldPrice: 7159,
-		newPrice: 5017,
-	},
-	{
-		name: 'Кухня Лондон модульная',
-		oldPrice: 7159,
-		newPrice: 5017,
-	},
-	{
-		name: 'КМори кровать КРМ 900.1',
-		oldPrice: 7159,
-		newPrice: 5017,
-	}
-]
-
 
 function fillCategories() {
 	for (let i = 0; i < categoriesList.length; i++) {
@@ -157,6 +114,10 @@ showMoreBtn.addEventListener('click', () => {
 })
 
 closeModalBtn.addEventListener('click',() => {
+	cartModal.classList.remove('modal-opened')
+})
+
+continueBtn.addEventListener('click',() => {
 	cartModal.classList.remove('modal-opened')
 })
 

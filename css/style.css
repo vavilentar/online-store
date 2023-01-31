@@ -170,7 +170,7 @@ a {
 
 .hero {
 	height: 387px;
-	width: 1520px;
+	max-width: 1520px;
 	border-radius: 10px;
 	background-color: #C4C4C4;
 	margin-top: 42px;
